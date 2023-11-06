@@ -5,6 +5,7 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: lightgrey ;
+    height: 100%;
 }
 
 nav{
@@ -43,14 +44,44 @@ main aside{
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 40%;
-    padding: 20px;
+    width: 900px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    height: 80%;
 
 }
 
 .students{
-    font-size: 16px;
     text-transform: uppercase;
     color:deepskyblue;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    cursor: pointer ;
+    background-color: orange !important;
+  }
+  
+main section{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    width: 900px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    height: 80%;
+    margin-left: 10px;
+}
+.study{
+    text-transform: uppercase;
+    color:grey;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.groups{
+    color: lightgray;
 }
