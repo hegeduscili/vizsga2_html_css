@@ -59,6 +59,14 @@ main aside{
     margin-bottom: 0;
 }
 
+input[type="search"] {
+    background-color: lightgray;
+    color: white !important;
+    height: 2rem;
+    width: 300px;
+    border: 0;
+  }
+
 input[type="checkbox"] {
     cursor: pointer ;
     background-color: orange !important;
