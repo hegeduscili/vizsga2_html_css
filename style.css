@@ -1,98 +1,78 @@
-*{
+* {
     box-sizing: border-box;
 }
-
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgrey ;
+/* Alapháttér beállítás */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
     height: 100%;
+    width: 100%;
 }
-
-nav{
+/*Navigációs Bár beállítás*/
+nav {
     padding-top: 30px;
-    padding-left: 30px; 
+    padding-left: 30px;
     padding-left: 200px;
     padding-right: 200px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.logo img{
+.logo img {
     height: 80px;
 }
 
-.logo p{
+.logo p {
     color: grey;
     margin: 0;
     padding: 0;
 }
 
-.profile i{
+.profile i {
     padding-top: 40px;
 }
-
-main{
+/*Kereső felület beállítás, 2 fül elrendezés*/
+main {
     display: flex;
+    flex-direction: column;
     padding: 100px;
     padding-top: 50px;
-
+    width: 100%;
 }
 
-main aside{
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.choose_view {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.students_view,
+.groups_view {
+    width: 500px;
+    padding: 50px;
+    padding-bottom: 70px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.students_view {
+    margin-right: 10px;
     background-color: white;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 900px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    height: 80%;
-
 }
 
-.students{
-    text-transform: uppercase;
-    color:deepskyblue;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-input[type="search"] {
-    background-color: lightgray;
-    color: white !important;
-    height: 2rem;
-    width: 300px;
-    border: 0;
-    padding-left: 30px;
-  }
-
-input[type=checkbox]{
-    margin-bottom: 20px;
-  }
-
-.checkbox:before{
-    cursor: pointer;
-    background-color: lightgray;
-  }
-
-.checkbox:after {
-    cursor: pointer;
-    background-color: orange;
-  }
-main section{
-    background-color: rgb(216, 230, 248) !important;);
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 900px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    height: 80%;
+.groups_view {
     margin-left: 10px;
+    background-color: rgb(216, 230, 248);
 }
+
+
 .study{
     text-transform: uppercase;
     color:grey;
@@ -103,21 +83,108 @@ main section{
     color: lightgray;
 }
 
-.circle{
+
+.students {
+    text-transform: uppercase;
+    color: deepskyblue;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/*Kereső és Listázó felület*/
+.students_search{
+    position: relative;
+    top: -50px;
+    width: 100%;
+    background-color: white;
     display: flex;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black ;
-    border-radius:50%;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    padding-top: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search_text,
+.checkbox_text{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: lightgrey;
+}
+
+input[type="search"] {
+    background-color: lightgray;
+    color: white !important;
+    height: 2rem;
+    width: 230px;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+
+input[type="checkbox"] {
+    margin-bottom: 20px;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+label {
+    color: black;
     align-items: center;
-    margin: 0 auto;
+    cursor: pointer;
 }
 
-.icons{
-    text-align: center;
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 16px;
+    color: #d5d5d5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hidden{
-    display: none;
+
+input[type="checkbox"]:checked {
+    background-color: orange;
+    color: #000000 !important;
+
 }
+
+
+.information{
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.new_icon {
+    margin-left: 40px;
+    display: inline-block;
+    color: white;
+    background-color: skyblue;
+    height:40px;
+    width:40px;
+    text-align: center; 
+  }
+
+  .new_text {
+    display: inline-block; 
+    color: white;
+    background-color: deepskyblue;
+    height: 40px;
+    width: 80px;
+    text-align: center; 
+  }

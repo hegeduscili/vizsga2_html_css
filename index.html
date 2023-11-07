@@ -20,64 +20,58 @@
         </div>
     </nav>
     <main>
-        <aside>
-            <div class="first_row">
-                <p class="students">students</p>
-                <p class="reg">125 student registered</p>
-            </div>
-            <div class="search">
-                <p>SEARCH FOR NAME</p>
-                <div style="position: relative;">
-                    <input type="search" name="search" id="search">
-                    <i class="fas fa-search " style="position: absolute; top: 8px; left: 10px; color: white; z-index: 1;"></i>
-                </div>
-            </div>
-            <div class="check">
-                <p style="text-transform: uppercase">filter for study groups</p>
-            </div>
-            <input type="checkbox" name="typo" id="typo"> Typography <br>
-            <input type="checkbox" name="bio" id="bio" class="checkbox"> Biologists</br>
-            <input type="checkbox" name="chemi" id="chemi" class="checkbox"> Chemistry Capital</br>
-            <input type="checkbox" name="web" id="web" class="checkbox"> Web designers</br>
-            <input type="checkbox" name="black" id="black" class="checkbox"> Black magicians</br>
-            <input type="checkbox" name="lame" id="lame" class="checkbox"> Lame gamer boys</br>
-            </div>
-        </aside>
 
-        <section class="study_groups">
-            <div class="first_row">
-                <p class="study">study groups</p>
-                <p class="groups">6 study groups with 42 students</p>
-                <div class="icons hidden">
-                    <div class="circle">
-                        <i class="fas fa-object-group fa-lg"></i>
+        <div class="choose_view">
+            <a href="#">
+                <div class="students_view">
+                    <p class="students">students</p>
+                    <p>125 student registered</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="groups_view">
+                    <p class="study">study groups</p>
+                    <p class="groups">6 study groups with 42 students</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="students_search">
+            <div class="search_things">
+                <div class="search">
+                    <p class="search_text">search for name</p>
+                    <div style="position: relative;">
+                        <input type="search" name="search" id="search">
+                        <i class="fas fa-search " style="position: absolute; top: 8px; left: 10px; color: white; z-index: 1;"></i>
                     </div>
-                    <p>Typography</p>
-                    <div class="circle">
-                        <i class="fas fa-hands-helping fa-lg"></i>
-                    </div>
-                    <p>Biologists</p>
-                    <div class="circle">
-                        <i class="fas fa-chalkboard-teacher fa-lg"></i>
-                    </div>
-                    <p>Chemistry Capital</p>
-                    <div class="circle">
-                        <i class="fas fa-book-reader fa-lg"></i>
-                    </div>
-                    <p>Web designers</p>
-                    <div class="circle">
-                        <i class="fas fa-comments fa-lg"></i>
-                    </div>
-                    <p>Black magicians</p>
-                    <div class="circle">
-                        <i class="fas fa-gamepad fa-lg"></i>
-                    </div>
-                    <p>Lame gamer boys</p>
                 </div>
 
-
+                <div class="check">
+                    <p class="checkbox_text">filter for study groups</p>
+                </div>
+                <input type="checkbox" name="typo" id="typo"> <label for="typo">Typography</label> <br>
+                <input type="checkbox" name="bio" id="bio" class="checkbox"> <label for="bio">Biologists</label></br>
+                <input type="checkbox" name="chemi" id="chemi" class="checkbox"> <label for="chemi">Chemistry</label> Capital</br>
+                <input type="checkbox" name="web" id="web" class="checkbox"> <label for="web">Web designers</label></br>
+                <input type="checkbox" name="black" id="black" class="checkbox"> <label for="black">Black magicians</label></br>
+                <input type="checkbox" name="lame" id="lame" class="checkbox"> <label for="lame">Lame gamer boys</label></br>
             </div>
-        </section>
+            <div class="table_students">
+
+                <div class="information">
+                    <i class="far fa-user fa-lg"> 125 student</i>
+                    
+                    <a href="#" class="new_icon"><i class="fas fa-pen-square"></i></a><a href="#" class="new_text">New</a>
+                </div>
+
+                <table>
+
+
+                </table>
+            </div>
+        </div>
+    
     </main>
 </body>
 
