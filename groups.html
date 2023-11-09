@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -36,19 +38,118 @@
             </a>
         </div>
 
-        <div class="students_search">
-            <div class="search_things">
-                <div class="search">
-                    <p class="search_text">search for name</p>
-                    <div style="position: relative;">
-                        <input type="search" name="search" id="search">
-                        <i class="fas fa-search "
-                            style="position: absolute; top: 8px; left: 10px; color: white; z-index: 1;"></i>
+        <div class="students_search_g">
+            <div class="pair">
+                <div class="circle">
+                    <i class="fas fa-object-group fa-lg"></i>
+                </div>
+                <p>Typography</p>
+            </div>
+            <div class="pair">
+                <div class="circle active">
+                    <i class="fas fa-hands-helping fa-lg"></i>
+                </div>
+                <p>Biologists</p>
+            </div>
+            <div class="pair">
+                <div class="circle">
+                    <i class="fas fa-chalkboard-teacher fa-lg"></i>
+                </div>
+                <p>Chemistry Capital</p>
+            </div>
+            <div class="pair">
+                <div class="circle">
+                    <i class="fas fa-book-reader fa-lg"></i>
+                </div>
+                <p>Web designers</p>
+            </div>
+            <div class="pair">
+                <div class="circle">
+                    <i class="fas fa-comments fa-lg"></i>
+                </div>
+                <p>Black magicians</p>
+            </div>
+            <div class="pair">
+                <div class="circle">
+                    <i class="fas fa-gamepad fa-lg"></i>
+                </div>
+                <p>Lame gamer boys</p>
+            </div>
+
+
+            <div class="table_students"  style="overflow-x:auto;">
+
+                <div class="information">
+                    <i class="far fa-user fa-lg"> 3 student</i>
+    
+    
+                    <div style="display:flex">
+    
+                        <a href="#" class="new_icon"><i class="fas fa-pen-square"></i></a>
+                        <a href="#" class="new_text">New</a>
+                    </div>
+    
+    
+    
+                    <div class="page_cont">
+                        <a href="#" class="page elso active ">1</a>
+                        <a href="#" class="page hidden">2</a>
+                        <a href="#" class="page hidden">3</a>
                     </div>
                 </div>
-            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align: left;"><input type="checkbox" name="" id=""></th>
+                        <th>name</th>
+                        <th>sex</th>
+                        <th>groups</th>
+                        <th style="text-align: end;">add more</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="profile1" id="profile1"> <i class="far fa-user">
+                                Profile</i></td>
+                        <td style="text-align: center;">John Doe Smith</td>
+                        <td style="text-align: center;">Male</td>
+                        <td style="text-align: center;">Biologists, Typography and <span style="color: orange;">2 more</span></td>
+                        <td style="text-align: end; padding-right: 30px;"><i class="fas fa-plus"></i></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="profile1" id="profile1"> <i class="far fa-user">
+                                Profile</i></td>
+                        <td style="text-align: center;">Peter Erdosi</td>
+                        <td style="text-align: center;">Male</td>
+                        <td style="text-align: center;">Biologists</td>
+                        <td style="text-align: end; padding-right: 30px;"><i class="fas fa-plus"></i></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="checkbox" name="profile1" id="profile1"> <i class="far fa-user">
+                                Profile</i></td>
+                        <td style="text-align: center;">Rebeca Trulli</td>
+                        <td style="text-align: center;">Female</td>
+                        <td  style="text-align: center;">Biologists</td>
+                        <td style="text-align: end; padding-right: 30px;"><i class="fas fa-plus"></i></td>
+                    </tr>
+                
+                </tbody>
+
+            </table>
         </div>
+        </div>
+
+       
+
+
+          
+
+
     </main>
 
 </body>
+
 </html>
