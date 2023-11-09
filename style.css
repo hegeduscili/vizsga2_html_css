@@ -7,6 +7,7 @@ body {
     background-color: lightgrey;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 /*Navigációs Bár beállítás*/
 nav {
@@ -164,14 +165,22 @@ input[type="checkbox"]:checked {
 
 }
 
+.table_students{
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+
 /*Gombok (Új hozzáadás)*/
 .information{
     display: flex ;
     align-items: center;
     padding: 50px;
     margin-left: 100px;
-}
+    width: 100%;
+    justify-content: space-between;
 
+}
 
 .new_icon, .new_text {
     display: flex;
@@ -198,3 +207,55 @@ input[type="checkbox"]:checked {
     border-bottom-left-radius: 0;
     width: 80px; 
   }
+
+  .page_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+.page {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+    background-color: lightgrey;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.page.elso {
+    margin-left: 50px;
+}
+
+.page.active {
+    color: orange;
+}
+
+.information .page_cont {
+    left: 20px;
+}
+
+/*tábla*/
+table,th,tr,td{
+    border-top: 1px solid lightgray;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    padding-left: 30px;
+}
+
+th{
+    text-transform:uppercase;
+    color: lightgrey;
+}
+
+tr{
+
+    align-items: center;
+}
+
