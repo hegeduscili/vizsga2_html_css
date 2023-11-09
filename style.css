@@ -177,7 +177,6 @@ input[type="checkbox"]:checked {
     align-items: center;
     padding: 50px;
     margin-left: 100px;
-    width: 100%;
     justify-content: space-between;
 
 }
@@ -245,8 +244,11 @@ table,th,tr,td{
     border-collapse: collapse;
 }
 table{
-    width: 100%;
     padding-left: 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
 }
 
 th{
@@ -259,3 +261,53 @@ tr{
     align-items: center;
 }
 
+/*RESZPONZIV*/
+
+@media screen and (max-width: 1440px) {
+
+
+
+}
+
+
+    @media screen and (max-width: 768px) {
+        nav {
+            width: 500px;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 20px;
+        }
+    
+        .choose_view {
+            width: 300px;
+            flex-direction: column;
+        }
+    
+        .students_view,
+        .groups_view {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .students_view {
+            margin-right: 0;
+        }
+
+        .groups_view {
+            margin-left: 0;
+        }
+        .students_search{
+            top: 0;
+        }
+
+        .students_search
+       {
+            width: 300px;
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .information {
+           justify-content: left;
+        }
+    }
