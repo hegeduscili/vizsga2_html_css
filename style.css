@@ -109,6 +109,22 @@ a{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.students_search_groups{
+    position: relative;
+    top: -50px;
+    width: 100%;
+    background-color: rgb(216, 230, 248);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    padding-top: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .search_text,
 .checkbox_text{
     font-size: 14px;
@@ -311,3 +327,23 @@ tr{
            justify-content: left;
         }
     }
+/*GROUPS NÉZET*/
+.groups_view_g,.students_view_g{
+width: 500px;
+    padding: 50px;
+    padding-bottom: 70px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.groups_view_g{
+    background-color: white !important;
+    margin-left: 10px;
+
+}
+
+.students_view_g{
+    background-color: rgb(216, 230, 248) !important;
+    margin-right: 10px;
+
+}
