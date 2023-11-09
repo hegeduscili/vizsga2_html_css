@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 /* Alapháttér beállítás */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,6 +10,7 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
 /*Navigációs Bár beállítás*/
 nav {
     padding-top: 30px;
@@ -33,6 +35,7 @@ nav {
 .profile i {
     padding-top: 40px;
 }
+
 /*Kereső felület beállítás, 2 fül elrendezés*/
 main {
     display: flex;
@@ -42,7 +45,7 @@ main {
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: grey;
 }
@@ -74,13 +77,14 @@ a{
 }
 
 
-.study{
+.study {
     text-transform: uppercase;
-    color:grey;
+    color: grey;
     font-weight: bold;
     margin-bottom: 0;
 }
-.groups{
+
+.groups {
     color: lightgray;
 }
 
@@ -93,7 +97,7 @@ a{
 }
 
 /*Kereső és Listázó felület*/
-.students_search{
+.students_search {
     position: relative;
     top: -50px;
     width: 100%;
@@ -109,7 +113,7 @@ a{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.students_search_groups{
+.students_search_groups {
     position: relative;
     top: -50px;
     width: 100%;
@@ -126,7 +130,7 @@ a{
 }
 
 .search_text,
-.checkbox_text{
+.checkbox_text {
     font-size: 14px;
     text-transform: uppercase;
     color: lightgrey;
@@ -181,15 +185,15 @@ input[type="checkbox"]:checked {
 
 }
 
-.table_students{
+.table_students {
     flex-direction: column;
     width: 100%;
     padding: 50px;
 }
 
 /*Gombok (Új hozzáadás)*/
-.information{
-    display: flex ;
+.information {
+    display: flex;
     align-items: center;
     padding: 50px;
     margin-left: 100px;
@@ -197,7 +201,8 @@ input[type="checkbox"]:checked {
 
 }
 
-.new_icon, .new_text {
+.new_icon,
+.new_text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,30 +211,30 @@ input[type="checkbox"]:checked {
     height: 40px;
     text-align: center;
     justify-content: center;
-  }
+}
 
 .new_icon {
     margin-left: 40px;
     background-color: skyblue;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width:40px; 
-  }
+    width: 40px;
+}
 
-  .new_text {
+.new_text {
     background-color: deepskyblue;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    width: 80px; 
-  }
+    width: 80px;
+}
 
-  .page_cont {
+.page_cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
+}
+
 .page {
     display: flex;
     width: 30px;
@@ -255,11 +260,15 @@ input[type="checkbox"]:checked {
 }
 
 /*tábla*/
-table,th,tr,td{
+table,
+th,
+tr,
+td {
     border-top: 1px solid lightgray;
     border-collapse: collapse;
 }
-table{
+
+table {
     padding-left: 30px;
     border-collapse: collapse;
     border-spacing: 0;
@@ -267,81 +276,84 @@ table{
 
 }
 
-th{
-    text-transform:uppercase;
+th {
+    text-transform: uppercase;
     color: lightgrey;
 }
 
-tr{
+tr {
 
     align-items: center;
 }
 
 /*RESZPONZIV*/
-    @media screen and (max-width: 768px) {
-        nav {
-            width: 500px;
-            justify-content: space-between;
-            font-size: 14px;
-            padding: 20px;
-        }
-    
-        .choose_view {
-            width: 300px;
-            flex-direction: column;
-        }
-    
-        .students_view,
-        .groups_view {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-    
-        .students_view {
-            margin-right: 0;
-        }
-
-        .groups_view {
-            margin-left: 0;
-        }
-        .students_search{
-            top: 0;
-        }
-
-        .students_search
-       {
-            width: 300px;
-            flex-direction: column;
-            padding: 20px;
-        }
-    
-        .information {
-           justify-content: left;
-        }
+@media screen and (max-width: 768px) {
+    nav {
+        width: 500px;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 20px;
     }
+
+    .choose_view {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .students_view,
+    .groups_view {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .students_view {
+        margin-right: 0;
+    }
+
+    .groups_view {
+        margin-left: 0;
+    }
+
+    .students_search {
+        top: 0;
+    }
+
+    .students_search {
+        width: 300px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .information {
+        justify-content: left;
+    }
+}
+
 /*GROUPS NÉZET*/
-.groups_view_g,.students_view_g{
-width: 500px;
+.groups_view_g,
+.students_view_g {
+    width: 500px;
     padding: 50px;
     padding-bottom: 70px;
     border: 1px solid lightgray;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.groups_view_g{
+
+.groups_view_g {
     background-color: white !important;
     margin-left: 10px;
 
 }
 
-.students_view_g{
+.students_view_g {
     background-color: rgb(216, 230, 248) !important;
     margin-right: 10px;
 
 }
 
 /*Körök elrendezése*/
-.students_search_g{
+.students_search_g {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -364,10 +376,10 @@ width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px; 
+    margin: 10px;
 }
 
-.circle{
+.circle {
     display: flex;
     width: 50px;
     height: 50px;
@@ -377,7 +389,7 @@ width: 500px;
     align-items: center;
 }
 
-.circle.active{
+.circle.active {
     display: flex;
     width: 50px;
     height: 50px;
@@ -392,6 +404,40 @@ width: 500px;
     text-align: center;
 }
 
-.page.hidden{
+.page.hidden {
     display: none;
+}
+
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width: 768px) {
+    .students_view_g,
+    .groups_view_g {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .students_view_g {
+        margin-right: 0;
+    }
+
+    .groups_view_g {
+        margin-left: 0;
+    }
+
+    .students_search_g {
+        top: 0;
+    }
+
+    .students_search_g {
+        width: 300px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .information {
+        justify-content: left;
+    }
 }
